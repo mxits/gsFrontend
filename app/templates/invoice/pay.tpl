@@ -51,11 +51,11 @@
 	<p>
 		{if $payment_paypal}<a href="{felink controller="invoice" action="paypaypal"}/{$invoice->getId()}"><img src="{$fepath}public/img/paymentPayPal.gif" alt="PayPal" /></a>{/if}
 		{if $payment_paypal && $payment_sofort}&nbsp;&nbsp;{/if}
-		{if $payment_sofort}<a href="{felink controller="invoice" action="paysofort"}/{$invoice->getId()}"><img src="{$fepath}public/img/paymentSofort.gif" alt="sofortueberweisung.de" /></a>{/if}
+		{if $payment_sofort}<a href="{felink controller="invoice" action="paysofort"}/{$invoice->getId()}"><img src="https://x.klarnacdn.net/payment-method/assets/badges/generic/klarna.png" alt="klarna.de" /></a>{/if}
 	</p>
 	{if $payment_sofort}
 		<p>
-			<em>Bitte prüfen Sie vor der Bezahlung per sofortueberweisung.de ob Ihre Bank unterstützt wird.</em><br />
+			<em>Bitte prüfen Sie vor der Bezahlung per klarna ob Ihre Bank unterstützt wird.</em><br />
 			<a href="https://www.payment-network.com/sue_de/kaeuferbereich/bankensuche" target="_blank">Jetzt überprüfen</a>
 		</p>
 	{/if}
